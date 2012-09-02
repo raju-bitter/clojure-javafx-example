@@ -3,7 +3,7 @@
 This is a short example of how to use Clojure to create a "Hello World!" JavaFX application with Clojure and Leiningen.
 
    Copyright (c) 2012 Raju Bitter rajubitter@gmail.com  
-   http://github.com/raju-bitter/openlaszlo-flashbuilder-project  
+   https://github.com/raju-bitter/clojure-javafx-example  
    MIT license http://www.opensource.org/licenses/mit-license.php  
    Use is subject to license terms.  
 
@@ -95,5 +95,5 @@ Now you can launch the JavaFX application using the function launch in namespace
     The button was clicked
     nil
 
-<img src="img/javafx-app-screenshot.png alt="JavaFX app running with Clojure REPL" />
+<img src="https://raw.github.com/raju-bitter/clojure-javafx-example/master/img/javafx-app-screenshot.png" alt="JavaFX app running with Clojure REPL" />
 
