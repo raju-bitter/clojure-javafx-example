@@ -34,7 +34,10 @@ The $JAVA_HOME environment variable needs to be set, pointing to the Java 7 SDK 
 
 ### Installing JavaFX Runtime JAR into local Maven Repository
 
-Get the code for this project using either Github or the file download option. In the project folder, run the following command to install the JavaFX runtime JAR library locally into your Maven repository, using the corresponding version number (currently the Oracle Java 7 JDK includes JavaFX 2.2.0) and folders containing the jfxrt.jar and your Maven repository files.
+Get the code for this project using either Github or the file download option. In the project folder, run the following command to install the JavaFX runtime JAR library locally into your Maven repository. The currrent JavaFX version shipped with the Java 7 SDK is 2.2.0. Make sure to set the following options according to your system setup:
+
+  + -Dfile={full path to *jfxrt.jar* in jre/lib folder}
+  + -Durl=file:{full path to Maven repository, e.g. $HOME/m2.repository}
 
     mvn deploy:deploy-file -DgroupId=local.oracle  -DartifactId=javafxrt -Dversion=2.2.0 -Dpackaging=jar -Dfile=/usr/lib/jvm/java-7-oracle-64/jre/lib/jfxrt.jar -Durl=file:/home/raju/.m2/repository
 
