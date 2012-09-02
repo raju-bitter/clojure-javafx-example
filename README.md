@@ -79,7 +79,7 @@ Run 'lein deps' to download the Maven dependencies, and launch the REPL by runni
               (user/clojuredocs name-here)
               (user/clojuredocs "ns-here" "name-here")
     
-Compile the Clojure file in <a href="./src/jfx/app.clj">src/jfx/app.clj</a> using the compile function. This will produce a Java class file in the target folder: target/classes/clj/jfx/App.class 
+Compile the Clojure file in <a href="https://raw.github.com/raju-bitter/clojure-javafx-example/master/src/jfx/app.clj">src/jfx/app.clj</a> using the compile function. This will produce a Java class file in the target folder: target/classes/clj/jfx/App.class 
     user=> (compile 'jfx.app)
     jfx.app
 
@@ -94,6 +94,8 @@ Now you can launch the JavaFX application using the function launch in namespace
     The button was clicked
     The button was clicked
     nil
+
+Here is a screenshot of the application running. The stage contains a WebView, which loads the URL http://clojure.org, and a button with a click handler:
 
 <img src="https://raw.github.com/raju-bitter/clojure-javafx-example/master/img/javafx-app-screenshot.png" alt="JavaFX app running with Clojure REPL" />
 
